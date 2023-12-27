@@ -7,7 +7,7 @@ import ReactScrollBottom from "react-scroll-to-bottom";
 
 
 let socket;
-const ENDPOINT = "http://localhost:4500";
+const ENDPOINT = "https://mychatapp-i3pv.onrender.com";
 
 const Chat = () => {
 
