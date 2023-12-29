@@ -14,6 +14,7 @@
     height: 70%;
     width: 85%;
     padding-bottom: 0;
+    /* border-radius: 10%; */
 }
 
 .header{
@@ -22,7 +23,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
+
+@media only screen and (max-width: 600px) {
+    .header{
+        /* width: 30%; Make the button take 100% of the width on small screens */
+        height: 15%;
+    }
+}
+
 .header h2{
     color: palevioletred;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +53,7 @@
 
 .chatBox{
     /* border:0.2vmax solid black; */
-    height: 70%;
+    height: 80%;
     /* overflow-y: auto; */
 }
 
@@ -52,6 +62,14 @@
     height: 15%;
     display: flex;
 }
+@media only screen and (max-width: 600px) {
+    .inputBox {
+        width: 100%; /* Make the button take 100% of the width on small screens */
+        height: 10%;
+    }
+}
+
+
 
 #chatInput{
     width: 80%;
@@ -59,7 +77,7 @@
     background-color: white;
     padding: 0.2vmax;
     /* font-size: 0.3vmax; */
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* font-size: 1.2vmax; */
     /* border-bottom: 1vmax solid palevioletred; */
@@ -72,6 +90,12 @@
     width: 22%;
     cursor: pointer;
     height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .sendBtn {
+        width: 30%; /* Make the button take 100% of the width on small screens */
+    }
 }
 
 .sendBtn:hover{
